@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Principal.Controller">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutY="156.0" prefHeight="17.0" prefWidth="232.0" text="PROGRAMA TENIS" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.2368421107530594" green="0.2368421107530594" blue="0.2368421107530594" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="-6.0" layoutY="206.0" prefHeight="17.0" prefWidth="232.0" text="DAM" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="25.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3815789520740509" green="0.3815789520740509" blue="0.3815789520740509" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Line endX="94.0" endY="1.0" layoutX="116.0" layoutY="190.0" startX="-106.0" startY="1.0" stroke="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Circle fill="#ffffff00" layoutX="110.0" layoutY="191.0" radius="100.0" stroke="#ffffff2e" strokeType="INSIDE">
+               <effect>
+                  <Glow level="0.57" />
+               </effect>
+            </Circle>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="-2.0" layoutY="37.0" prefHeight="22.0" prefWidth="291.0" text="Introduce la informacion del partido" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="15.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="equipo1" layoutX="107.0" layoutY="79.0" promptText=" Nombre Equipo 1" text="Spain" />
+            <Button fx:id="comprobarBoton" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="307.0" mnemonicParsing="false" onAction="#comprobarBotonAction" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: green;" text="Comprobar" textFill="WHITE" />
+            <Button fx:id="botonSalir" layoutX="60.0" layoutY="341.0" mnemonicParsing="false" onAction="#botonSalirOnAction" prefHeight="25.0" prefWidth="170.0" text="Salir" />
+            <TextField fx:id="jugador1" layoutX="107.0" layoutY="112.0" promptText=" Nombre Jugador 1" text="Nadal" />
+            <TextField fx:id="jugador2" layoutX="107.0" layoutY="145.0" promptText=" Nombre Jugador 2" text="Alcaraz" />
+            <TextField fx:id="equipo2" layoutX="107.0" layoutY="181.0" promptText=" Nombre Equipo 2" text="Usa" />
+            <TextField fx:id="jugador3" layoutX="107.0" layoutY="214.0" promptText=" Nombre Jugador 1" text="Williams" />
+            <TextField fx:id="jugador4" layoutX="107.0" layoutY="246.0" promptText=" Nombre Jugador 2" text="John" />
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="83.0" prefHeight="17.0" prefWidth="107.0" text="Equipo 1" />
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="116.0" prefHeight="17.0" prefWidth="107.0" text="Jugador 1" />
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="149.0" prefHeight="17.0" prefWidth="107.0" text="Jugador 2" />
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="185.0" prefHeight="17.0" prefWidth="107.0" text="Equipo 2" />
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="218.0" prefHeight="17.0" prefWidth="107.0" text="Jugador 1" />
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="250.0" prefHeight="17.0" prefWidth="107.0" text="Jugador 2" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
